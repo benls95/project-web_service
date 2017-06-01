@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1"/>
+<title>Book Search</title>
+<link rel="stylesheet" href="css/styles.css"/>
+<link rel="stylesheet" href="css/jquery-ui.css"/>
+<link rel="stylesheet" href="css/jquery-ui.min.css"/>
+<link rel="stylesheet" href="css/jquery-ui.structure.css"/>
+<link rel="stylesheet" href="css/jquery-ui.structure.min.css"/>
+<link rel="stylesheet" href="css/jquery-ui.theme.css"/>
+<link rel="stylesheet" href="css/jquery-ui.theme.min.css"/>
+<link rel="stylesheet" href="css/autocomplete.css"/>
+
+<script src="scripts/jquery.js"></script>
+<script src="scripts/jquery-ui.min.js"></script> 
+<script src="scripts/myquery.js"></script>
+<style>
+table, td, th{
+   border: 1px solid black;
+   text-align: center;
+    color: red;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+</style>
+</head>
+<body>
+<h1 align="center">Home Page</h1></br>
+
+<div class="wrapper">
+
+<div id="accordion-panel-div">
+
+<h2><a href="#">Get a Book by Title</a></h2>
+<div>
+<form action="getBook">
+<fieldset>
+<legend>Get a Book by Title</legend>
+<center>Book Title</br>
+<input type="text" id="testbktitle" title="type a book &quot;title&quot;" name="title"><br>
+<br>
+Format</br>
+(text is default)
+</br>
+<input type="text" title="type a &quot;format&quot;" id="testbkformat" name="format"><br></br>
+<input type="button" value="Submit" id="test_one_input"/><br/>
+<h3 id="working1" style="display: none" >
+<img src="images/ajax-gif.gif"/>
+I am working..
+</h3>
+<h2 id="test_one_message"></h2>
+<div id="test_one"></div>
+</fieldset>
+</form>
+</div>
+
+<h2><a href="#">Get all Books</a></h2>      
+<div>
+<form action="getAllBooks">
+<fieldset>
+<legend>Get All Books</legend>
+<center>Format</br>
+(text is default)
+</br>
+<input type="text" title="type a &quot;format&quot;" id="test2bkformat" name="format"><br></br>
+<input type="button" value="Submit" id="test_all_input"/><br/>
+<h3 id="working2" style="display: none" >
+<img src="images/ajax-gif.gif"/>
+I am working..
+</h3>
+<h2 id="test_all_message"></h2>
+<div id="test_all"></div>
+</fieldset>
+</form>
+</div>
+
+<h2><a href="#">Insert a Book</a></h2>
+<div>
+<form action="insertBook">
+<fieldset>
+<legend>Insert a Book</legend>
+<center>Book Title: <input type="text" id="test3bktitle" name="title" value="1"><br>
+Book Type: <input type="text" id="test3bktype" name="type" value="2"><br>
+Book Year: <input type="text" id="test3bkyear" name="year" value="3"><br>
+Book Author: <input type="text" id="test3bkauthor" name="author" value="4"><br>
+Book Price: <input type="text" id="test3bkprice" name="price" value="5"><br>
+Book Availability: <input type="text" id="test3bkavail" name="avail" value="6"><br><br>
+Format</br>
+(text is default)
+</br><input type="text" title="type a &quot;format&quot;" id="test3bkformat" name="format"><br><br>
+
+<input type="button" value="Submit" id="test_ins_input"/><br/>
+<h3 id="working3" style="display: none" >
+<img src="images/ajax-gif.gif"/>
+I am working..
+</h3>
+<h2 id="test_ins_message"></h2>
+<div id="test_ins"></div>
+</fieldset>
+</form>
+</div>
+</div>
+</div>
+<br>
+</body>
+</html>

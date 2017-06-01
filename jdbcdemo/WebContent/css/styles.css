@@ -1,0 +1,46 @@
+
+h2 {
+  text-align: center;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+h1 {
+	text-align: center;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #a293bc;
+}
+hello {
+	text-align: center;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  color: #a293bc;
+}
+
+fieldset{
+  border-color: green;
+  border-style: solid;
+  width: 400px;
+  margin:auto;
+}
+
+
+#home-fieldset{
+  border-color: blue;
+  border-style: solid;
+  width: 100px;
+  margin:auto;
+  text-align: center;
+}
+
+th {
+  text-align: center;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  color: blue;
+}
+
+.wrapper {
+	width: 45em;
+	margin:auto;
+}
+
+
+
+

@@ -1,0 +1,870 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://jdbc" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://jdbc" xmlns:intf="http://jdbc" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<!--WSDL created by Apache Axis version: 1.4
+Built on Apr 22, 2006 (06:55:48 PDT)-->
+ <wsdl:types>
+  <schema elementFormDefault="qualified" targetNamespace="http://jdbc" xmlns="http://www.w3.org/2001/XMLSchema">
+   <element name="toString">
+    <complexType/>
+   </element>
+   <element name="toStringResponse">
+    <complexType>
+     <sequence>
+      <element name="toStringReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getType">
+    <complexType/>
+   </element>
+   <element name="getTypeResponse">
+    <complexType>
+     <sequence>
+      <element name="getTypeReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getYear">
+    <complexType/>
+   </element>
+   <element name="getYearResponse">
+    <complexType>
+     <sequence>
+      <element name="getYearReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="setYear">
+    <complexType>
+     <sequence>
+      <element name="year" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="setYearResponse">
+    <complexType/>
+   </element>
+   <element name="getTitle">
+    <complexType/>
+   </element>
+   <element name="getTitleResponse">
+    <complexType>
+     <sequence>
+      <element name="getTitleReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="setType">
+    <complexType>
+     <sequence>
+      <element name="type" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="setTypeResponse">
+    <complexType/>
+   </element>
+   <element name="setAuthor">
+    <complexType>
+     <sequence>
+      <element name="author" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="setAuthorResponse">
+    <complexType/>
+   </element>
+   <element name="getAuthor">
+    <complexType/>
+   </element>
+   <element name="getAuthorResponse">
+    <complexType>
+     <sequence>
+      <element name="getAuthorReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="setTitle">
+    <complexType>
+     <sequence>
+      <element name="title" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="setTitleResponse">
+    <complexType/>
+   </element>
+   <element name="getPrice">
+    <complexType/>
+   </element>
+   <element name="getPriceResponse">
+    <complexType>
+     <sequence>
+      <element name="getPriceReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="setPrice">
+    <complexType>
+     <sequence>
+      <element name="price" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="setPriceResponse">
+    <complexType/>
+   </element>
+   <element name="getAvail">
+    <complexType/>
+   </element>
+   <element name="getAvailResponse">
+    <complexType>
+     <sequence>
+      <element name="getAvailReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="setAvail">
+    <complexType>
+     <sequence>
+      <element name="avail" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="setAvailResponse">
+    <complexType/>
+   </element>
+   <element name="setBookId">
+    <complexType>
+     <sequence>
+      <element name="bookId" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="setBookIdResponse">
+    <complexType/>
+   </element>
+   <element name="getBookId">
+    <complexType/>
+   </element>
+   <element name="getBookIdResponse">
+    <complexType>
+     <sequence>
+      <element name="getBookIdReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+  </schema>
+ </wsdl:types>
+
+   <wsdl:message name="getYearResponse">
+
+      <wsdl:part element="impl:getYearResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="setTitleRequest">
+
+      <wsdl:part element="impl:setTitle" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="setTypeRequest">
+
+      <wsdl:part element="impl:setType" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getBookIdResponse">
+
+      <wsdl:part element="impl:getBookIdResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="setTypeResponse">
+
+      <wsdl:part element="impl:setTypeResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="toStringResponse">
+
+      <wsdl:part element="impl:toStringResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="setYearRequest">
+
+      <wsdl:part element="impl:setYear" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getAvailResponse">
+
+      <wsdl:part element="impl:getAvailResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getTypeRequest">
+
+      <wsdl:part element="impl:getType" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="setAvailRequest">
+
+      <wsdl:part element="impl:setAvail" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="setPriceResponse">
+
+      <wsdl:part element="impl:setPriceResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getTitleRequest">
+
+      <wsdl:part element="impl:getTitle" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getAvailRequest">
+
+      <wsdl:part element="impl:getAvail" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="toStringRequest">
+
+      <wsdl:part element="impl:toString" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getTitleResponse">
+
+      <wsdl:part element="impl:getTitleResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getPriceRequest">
+
+      <wsdl:part element="impl:getPrice" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="setPriceRequest">
+
+      <wsdl:part element="impl:setPrice" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="setBookIdRequest">
+
+      <wsdl:part element="impl:setBookId" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="setAuthorRequest">
+
+      <wsdl:part element="impl:setAuthor" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getBookIdRequest">
+
+      <wsdl:part element="impl:getBookId" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getYearRequest">
+
+      <wsdl:part element="impl:getYear" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="setAvailResponse">
+
+      <wsdl:part element="impl:setAvailResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getPriceResponse">
+
+      <wsdl:part element="impl:getPriceResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="setBookIdResponse">
+
+      <wsdl:part element="impl:setBookIdResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getAuthorResponse">
+
+      <wsdl:part element="impl:getAuthorResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="setYearResponse">
+
+      <wsdl:part element="impl:setYearResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getTypeResponse">
+
+      <wsdl:part element="impl:getTypeResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="setAuthorResponse">
+
+      <wsdl:part element="impl:setAuthorResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getAuthorRequest">
+
+      <wsdl:part element="impl:getAuthor" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="setTitleResponse">
+
+      <wsdl:part element="impl:setTitleResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:portType name="Book">
+
+      <wsdl:operation name="toString">
+
+         <wsdl:input message="impl:toStringRequest" name="toStringRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:toStringResponse" name="toStringResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getType">
+
+         <wsdl:input message="impl:getTypeRequest" name="getTypeRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getTypeResponse" name="getTypeResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getYear">
+
+         <wsdl:input message="impl:getYearRequest" name="getYearRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getYearResponse" name="getYearResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="setYear">
+
+         <wsdl:input message="impl:setYearRequest" name="setYearRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:setYearResponse" name="setYearResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getTitle">
+
+         <wsdl:input message="impl:getTitleRequest" name="getTitleRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getTitleResponse" name="getTitleResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="setType">
+
+         <wsdl:input message="impl:setTypeRequest" name="setTypeRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:setTypeResponse" name="setTypeResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="setAuthor">
+
+         <wsdl:input message="impl:setAuthorRequest" name="setAuthorRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:setAuthorResponse" name="setAuthorResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getAuthor">
+
+         <wsdl:input message="impl:getAuthorRequest" name="getAuthorRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getAuthorResponse" name="getAuthorResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="setTitle">
+
+         <wsdl:input message="impl:setTitleRequest" name="setTitleRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:setTitleResponse" name="setTitleResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getPrice">
+
+         <wsdl:input message="impl:getPriceRequest" name="getPriceRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getPriceResponse" name="getPriceResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="setPrice">
+
+         <wsdl:input message="impl:setPriceRequest" name="setPriceRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:setPriceResponse" name="setPriceResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getAvail">
+
+         <wsdl:input message="impl:getAvailRequest" name="getAvailRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getAvailResponse" name="getAvailResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="setAvail">
+
+         <wsdl:input message="impl:setAvailRequest" name="setAvailRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:setAvailResponse" name="setAvailResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="setBookId">
+
+         <wsdl:input message="impl:setBookIdRequest" name="setBookIdRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:setBookIdResponse" name="setBookIdResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getBookId">
+
+         <wsdl:input message="impl:getBookIdRequest" name="getBookIdRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getBookIdResponse" name="getBookIdResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:portType>
+
+   <wsdl:binding name="BookSoapBinding" type="impl:Book">
+
+      <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+
+      <wsdl:operation name="toString">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="toStringRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="toStringResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getType">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getTypeRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getTypeResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getYear">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getYearRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getYearResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="setYear">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="setYearRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="setYearResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getTitle">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getTitleRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getTitleResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="setType">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="setTypeRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="setTypeResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="setAuthor">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="setAuthorRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="setAuthorResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getAuthor">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getAuthorRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getAuthorResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="setTitle">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="setTitleRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="setTitleResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getPrice">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getPriceRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getPriceResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="setPrice">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="setPriceRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="setPriceResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getAvail">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getAvailRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getAvailResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="setAvail">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="setAvailRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="setAvailResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="setBookId">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="setBookIdRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="setBookIdResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getBookId">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getBookIdRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getBookIdResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:binding>
+
+   <wsdl:service name="BookService">
+
+      <wsdl:port binding="impl:BookSoapBinding" name="Book">
+
+         <wsdlsoap:address location="http://localhost:13958/jdbcdemo/"/>
+
+      </wsdl:port>
+
+   </wsdl:service>
+
+</wsdl:definitions>

@@ -1,0 +1,63 @@
+<!-- Use this file to deploy some handlers/chains and services      -->
+<!-- Two ways to do this:                                           -->
+<!--   java org.apache.axis.client.AdminClient deploy.wsdd          -->
+<!--      after the axis server is running                          -->
+<!-- or                                                             -->
+<!--   java org.apache.axis.utils.Admin client|server deploy.wsdd   -->
+<!--      from the same directory that the Axis engine runs         -->
+
+<deployment
+    xmlns="http://xml.apache.org/axis/wsdd/"
+    xmlns:java="http://xml.apache.org/axis/wsdd/providers/java">
+
+  <!-- Services from BookService WSDL service -->
+
+  <service name="Book" provider="java:RPC" style="wrapped" use="literal">
+      <parameter name="wsdlTargetNamespace" value="http://jdbc"/>
+      <parameter name="wsdlServiceElement" value="BookService"/>
+      <parameter name="schemaQualified" value="http://jdbc"/>
+      <parameter name="wsdlServicePort" value="Book"/>
+      <parameter name="className" value="jdbc.BookSoapBindingImpl"/>
+      <parameter name="wsdlPortType" value="Book"/>
+      <parameter name="typeMappingVersion" value="1.2"/>
+      <operation name="toString" qname="operNS:toString" xmlns:operNS="http://jdbc" returnQName="retNS:toStringReturn" xmlns:retNS="http://jdbc" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+      </operation>
+      <operation name="getType" qname="operNS:getType" xmlns:operNS="http://jdbc" returnQName="retNS:getTypeReturn" xmlns:retNS="http://jdbc" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+      </operation>
+      <operation name="getYear" qname="operNS:getYear" xmlns:operNS="http://jdbc" returnQName="retNS:getYearReturn" xmlns:retNS="http://jdbc" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+      </operation>
+      <operation name="setYear" qname="operNS:setYear" xmlns:operNS="http://jdbc" soapAction="" >
+        <parameter qname="pns:year" xmlns:pns="http://jdbc" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="getTitle" qname="operNS:getTitle" xmlns:operNS="http://jdbc" returnQName="retNS:getTitleReturn" xmlns:retNS="http://jdbc" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+      </operation>
+      <operation name="setType" qname="operNS:setType" xmlns:operNS="http://jdbc" soapAction="" >
+        <parameter qname="pns:type" xmlns:pns="http://jdbc" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="setAuthor" qname="operNS:setAuthor" xmlns:operNS="http://jdbc" soapAction="" >
+        <parameter qname="pns:author" xmlns:pns="http://jdbc" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="getAuthor" qname="operNS:getAuthor" xmlns:operNS="http://jdbc" returnQName="retNS:getAuthorReturn" xmlns:retNS="http://jdbc" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+      </operation>
+      <operation name="setTitle" qname="operNS:setTitle" xmlns:operNS="http://jdbc" soapAction="" >
+        <parameter qname="pns:title" xmlns:pns="http://jdbc" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="getPrice" qname="operNS:getPrice" xmlns:operNS="http://jdbc" returnQName="retNS:getPriceReturn" xmlns:retNS="http://jdbc" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+      </operation>
+      <operation name="setPrice" qname="operNS:setPrice" xmlns:operNS="http://jdbc" soapAction="" >
+        <parameter qname="pns:price" xmlns:pns="http://jdbc" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="getAvail" qname="operNS:getAvail" xmlns:operNS="http://jdbc" returnQName="retNS:getAvailReturn" xmlns:retNS="http://jdbc" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+      </operation>
+      <operation name="setAvail" qname="operNS:setAvail" xmlns:operNS="http://jdbc" soapAction="" >
+        <parameter qname="pns:avail" xmlns:pns="http://jdbc" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="setBookId" qname="operNS:setBookId" xmlns:operNS="http://jdbc" soapAction="" >
+        <parameter qname="pns:bookId" xmlns:pns="http://jdbc" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="getBookId" qname="operNS:getBookId" xmlns:operNS="http://jdbc" returnQName="retNS:getBookIdReturn" xmlns:retNS="http://jdbc" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+      </operation>
+      <parameter name="allowedMethods" value="getAuthor setTitle setType setPrice setYear getPrice setBookId getAvail getTitle getYear setAuthor setAvail getType getBookId toString"/>
+
+  </service>
+</deployment>
